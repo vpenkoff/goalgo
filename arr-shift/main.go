@@ -13,7 +13,7 @@ import (
  *  Given an array a of n integers and a number, d, perform d left rotations on the array.
  *  Return the updated array to be printed as a single line of space-separated integers.
  *
-*/
+ */
 
 func rotateLeft(arr []int, d int) []int {
 	n := len(arr)
@@ -27,13 +27,13 @@ func rotateLeft(arr []int, d int) []int {
 		arr[n-1] = first
 	}
 
-    return arr
+	return arr
 }
 
 func main() {
-    arr := []int{1, 2, 3, 4, 5}
-    d := 4
+	arr := []int{1, 2, 3, 4, 5}
+	d := 4
 
-    res := rotateLeft(arr, d)
+	res := rotateLeft(arr, d)
 	fmt.Println(res)
 }
